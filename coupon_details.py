@@ -62,11 +62,16 @@ def parse(store_id):
 						details = coupons[coupon].get('details')
 						expiration = coupons[coupon].get('expiration')
 						activated = coupons[coupon].get('activated')
+						category_1 = coupons[coupon].get('catdesc1','')
+						category_2 = coupons[coupon].get('catdesc2','')
+						category_3 = coupons[coupon].get('catdesc3','')
+						category = ' > '.join([category_1,category_2,category_3])
 
 						wallmart_data={
 								"offer":price,
 								"brand":product_brand,
 								"description":details,
+								"category":category,
 								"activated_date":activated,
 								"expiration_date":expiration,
 								"url":coupons_details_url
@@ -84,9 +89,10 @@ if __name__=="__main__":
 	store_id = args.store_id
 	scraped_data = parse(store_id)
 	
-	if scraped_data:		print ("Writing scraped data to %s_coupons.csv"%(store_id))	
+	if scraped_data:
+		print ("Writing scraped data to %s_coupons.csv"%(store_id))	
 		with open('%s_coupons.csv'%(store_id),'w') as csvfile:
-			fieldnames = ["offer","brand","description","activated_date","expiration_date","url"]
+			fieldnames = ["offer","brand","description","category","activated_date","expiration_date","url"]
 			writer = csv.DictWriter(csvfile,fieldnames = fieldnames,quoting=csv.QUOTE_ALL)
 			writer.writeheader()
 			for data in scraped_data:
