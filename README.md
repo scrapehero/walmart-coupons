@@ -31,10 +31,10 @@ Python LXML, for parsing the HTML Tree Structure using Xpaths (Learn how to inst
 
 ## Running the Scraper
 
-We will execute the script to get the coupon details of store ID 3305:
+We will execute the script to get the coupon details of store ID 2159:
 
 ```
-python3 walmart_coupon_retriever.py 3305
+python3 walmart_coupon_retriever.py 2159
 ```
 
 ## Sample Output
