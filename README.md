@@ -40,4 +40,4 @@ python3 walmart_coupon_retriever.py 3305
 ## Sample Output
 This will create a CSV file:
 
-[Sample Output] (https://raw.githubusercontent.com/scrapehero/walmart-coupons/master/2159_coupons.csv)
+[Sample Output](https://raw.githubusercontent.com/scrapehero/walmart-coupons/master/2159_coupons.csv)
