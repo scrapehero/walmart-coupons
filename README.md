@@ -1,6 +1,6 @@
 # Walmart Coupons
 Walmart Web Scraper written in Python 3 to extract coupon details for a store location. If you would like to know more about this scraper
-you can check it out at the blog post 'How to Scrape Coupons from Walmart using Python 3'
+you can check it out at the blog post 'How to Scrape Coupons from Walmart using Python 3' -https://www.scrapehero.com/how-to-scrape-coupon-details-from-a-walmart-store-using-python-and-lxml/
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
